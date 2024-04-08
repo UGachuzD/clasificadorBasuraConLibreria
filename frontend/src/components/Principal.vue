@@ -11,7 +11,6 @@
                 <v-card-title class="text-center">Imagen a clasificar:</v-card-title>
                 <v-file-input label="Seleccionar" variant="outlined" @change="handleFileUpload"></v-file-input>
                 <!-- Campo para mostrar información -->
-
                 <v-btn color="primary" @click="clasificarResiduo" :disabled="!selectedImage">Clasificar</v-btn>
                 <!-- Botón para limpiar campos -->
                 <v-btn color="error" @click="limpiarCampos">Limpiar</v-btn>
@@ -85,7 +84,7 @@ const obtenerImagenSegmentada = async (url) => {
     imageSegmentada.value = imageUrl;
   } catch (error) {
     console.error(error);
-    imageSegmentada.value = ""; // o una URL de imagen de respaldo
+    imageSegmentada.value = ""; 
   }
 };
 
@@ -96,5 +95,5 @@ const limpiarCampos = () => {
 </script>
 
 <style scoped>
-/* Estilos personalizados si es necesario */
+
 </style>
