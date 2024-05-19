@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load a model
-model = YOLO('best.pt')  # pretrained YOLOv8n model
+model = YOLO('best.pt')
 
 @app.route('/segment', methods=['POST'])
 def segment_image():
