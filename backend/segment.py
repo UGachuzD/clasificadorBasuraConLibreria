@@ -7,12 +7,8 @@ import io
 app = Flask(__name__)
 CORS(app)
 
-<<<<<<< HEAD
 # Load a model
 model = YOLO('best.pt')
-=======
-model = YOLO('best.pt') 
->>>>>>> d0e5ceb5bbf00b6297d23a6bf389297aec7291f8
 
 @app.route('/segment', methods=['POST'])
 def segmentarImagen():
