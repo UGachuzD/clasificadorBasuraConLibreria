@@ -130,5 +130,5 @@ const limpiarCampos = () => {
 </script>
 
 <style scoped>
-/* Estilos personalizados si es necesario */
+
 </style>
